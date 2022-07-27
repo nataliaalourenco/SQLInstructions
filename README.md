@@ -1,4 +1,4 @@
-# SQLInstructions
+# SQL Instructions (with examples)
 
 Defining the database schema.
 
@@ -6,10 +6,21 @@ Defining the database schema.
 
 Creating the physical structure tables inside of our database.
 
-###Basic datatypes (most common):
+### Basic datatypes (most common):
+
 INT (integers)
 DECIMAL(M,N) (M - number of digits, N - number of digits after the decimal point)
 VARCHAR(1) (Variable Character - String of text length 1)
 BLOB (Binary Large Object, stores large data. Images, files)
 DATE ('YYYY-MM-DD')
 TIMESTAMP ('YYYY-MM-DD HH:MM:SS' - used for recording)
+
+CREATE TABLE student (
+
+    student_id INT,
+    name VARCHAR(20),
+    major VARCHAR(20),
+    PRIMARY KEY(student_id)
+
+);
+
