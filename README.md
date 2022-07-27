@@ -14,13 +14,3 @@ VARCHAR(1) (Variable Character - String of text length 1)
 BLOB (Binary Large Object, stores large data. Images, files)
 DATE ('YYYY-MM-DD')
 TIMESTAMP ('YYYY-MM-DD HH:MM:SS' - used for recording)
-
-CREATE TABLE student (
-
-    student_id INT,
-    name VARCHAR(20),
-    major VARCHAR(20),
-    PRIMARY KEY(student_id)
-
-);
-
