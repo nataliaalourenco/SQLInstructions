@@ -410,3 +410,11 @@ CREATE
         END IF;
     END$$
 DELIMITER ;
+
+
+
+-- HAVING is used in combination with GROUP BY to ignore groups that don't meet certain criteria. So this query, for example, will only include groups that have more than one ID in them.
+SELECT Animal, COUNT(ID)
+FROM 'bigquery-public-data.pet_records.pets'
+GROUP BY Animal
+HAVING COUNT(ID) > 1
