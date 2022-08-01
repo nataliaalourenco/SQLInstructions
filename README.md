@@ -24,4 +24,10 @@ TIMESTAMP ('YYYY-MM-DD HH:MM:SS' - used for recording)
 
 ## 3 - Update & Delete
 
-## 4 - 
+## 4 - Queries
+
+## 5 - Functions, Wildcards, Unions & Joins
+
+## 6 - Nested Queries
+
+## 7 - Triggers
