@@ -5,7 +5,7 @@ CREATE TABLE student (
     PRIMARY KEY(student_id)
 );
 
-Obs (constraints):
+--Obs (constraints):
 -- NOT NULL depois de name, por ex, faria com que o name não pudesse ser vazio, deve ser preenchido obrigatoriamente
 -- UNIQUE depois de major, por ex, faria com que o major não pudesse ser repetido caso já exista em alguma linha anterior (PRIMARY KEY is both NOT NULL and UNIQUE)
 -- DEFAULT 'undecided' depois de major, por ex, significa que caso o valor para a coluna fique em branco (vazio), será inserido 'undecided' nesta linha e coluna específica
@@ -41,13 +41,13 @@ UPDATE student
 SET major = 'Bio'
 WHERE major = 'Biology'; -- changing everyone who has a major in Biology to Bio
 
-Obs (other comparison operators):
-= :equals
-<> :not equals
-> :greater than
-< :less than
->= :greater than or equal
-<= :less than or equal
+-- Obs (other comparison operators):
+-- = :equals
+-- <> :not equals
+-- > :greater than
+-- < :less than
+-- >= :greater than or equal
+-- <= :less than or equal
 
 UPDATE student
 SET major = 'Comp Sci'
@@ -327,7 +327,7 @@ FROM employee
 RIGHT JOIN branch
 ON employee.emp_id = branch.mgr_id; -- agora aparecem todas as áreas, mas as que não tiverem manager aparecem NULL
 
---existe também FULL OUTER JOIN, que apareceria todas as condições (une LEFT e RIGHT). mas o MySQL não permite
+-- existe também FULL OUTER JOIN, que apareceria todas as condições (une LEFT e RIGHT). mas o MySQL não permite
 
 -- Nomes dos funcionarios que venderam mais de 30000 para um só cliente
 SELECT works_with.emp_id
