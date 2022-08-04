@@ -418,3 +418,14 @@ SELECT Animal, COUNT(ID)
 FROM 'bigquery-public-data.pet_records.pets'
 GROUP BY Animal
 HAVING COUNT(ID) > 1
+
+
+-- Select query with INNER JOIN on multiple tables
+
+--SELECT column, another_table_column, …
+--FROM mytable
+--INNER JOIN another_table 
+--    ON mytable.id = another_table.id
+--WHERE condition(s)
+--ORDER BY column, … ASC/DESC
+--LIMIT num_limit OFFSET num_offset;
